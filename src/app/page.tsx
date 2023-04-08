@@ -33,10 +33,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div>
-        <h1>hi</h1>
-      </div>
-      <div>
+      <div className={styles["main-grid"]}>
         <h1>hi</h1>
       </div>
     </div>
