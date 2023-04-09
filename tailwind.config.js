@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
       },
+      boxShadow: {
+        "2sm": "0px 5px 15px rgba(59,2,132, 0.35)",
+      },
       colors: {
         white: "#f5f5f5",
         secondaryColor: "#5db1a2",
@@ -22,7 +25,7 @@ module.exports = {
         primaryColor: "#dfdfdf",
         grey: "#38333E",
         darkPurple: "#3b0284",
-        lightPurple: "#DFDFDF"
+        lightPurple: "#DFDFDF",
       },
       screens: {
         xxxs: "280px",
