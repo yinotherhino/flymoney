@@ -17,10 +17,11 @@ module.exports = {
         white: "#f5f5f5",
         secondaryColor: "#5db1a2",
         overlaycolor: "#1c0140",
-        lightPurple: "#e8e6ec",
+        lightGrey: "#e8e6ec",
         tertiaryColor: "#3b0284",
         primaryColor: "#dfdfdf",
-        grey: "#38333E"
+        grey: "#38333E",
+        darkPurple: "#3b0284"
       },
       screens: {
         xxxs: "280px",

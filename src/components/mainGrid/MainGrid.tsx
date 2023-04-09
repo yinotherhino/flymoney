@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styles from "./mainGrid.module.css";
 import Text from "@/components/texts/Text";
-import { BsBell } from "react-icons/bs";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdPersonOutline } from "react-icons/md";
 import Icon from "../icons/Icon";
+import Sidebar from "../sidebar/Sidebar";
 
 const MainGrid = () => {
   const [fullName, setFullName] = useState({
@@ -37,7 +37,7 @@ const MainGrid = () => {
         <div>2</div>
         <div>3</div>
       </div>
-      <aside className={styles["main-right"]}></aside>
+      <Sidebar />
     </main>
   );
 };
