@@ -3,7 +3,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styles from "./mainLeft.module.css";
 import Text from "@/components/texts/Text";
 import { RxDotFilled, RxDot } from "react-icons/rx";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { IoIosSwap } from "react-icons/io";
+import { BsBoxArrowDown } from "react-icons/bs";
+import Card from "@/components/cards/Card";
+import { AiFillEye, AiFillEyeInvisible, AiOutlinePlus } from "react-icons/ai";
+import { TbSend } from "react-icons/tb";
+import SmallCard from "./SmallCard";
+import Table from "../tables/Table";
 
 const MainLeft = () => {
   const [showBalance, setShowBalance] = useState(false);
@@ -14,7 +20,7 @@ const MainLeft = () => {
     ngn: "N2000.00",
   });
   const arrowStyle = " flex items-center justify-center";
-  const dotStyle = " text-[25px] text-white mr-1";
+  const dotStyle = " text-[25px] text-white mr-1 cursor pointer";
   const eyeStyle = " text-[15px] text-white ml-1 cursor-pointer";
 
   const handleShowBalance = (e: React.MouseEvent<SVGElement, MouseEvent>) => {
@@ -53,8 +59,16 @@ const MainLeft = () => {
           <IoIosArrowForward className={"text-darkPurple text-sm"} />
         </div>
       </div>
-      <div>2</div>
-      <div>3</div>
+      <div className={styles["four-cards-div"]}>
+        <SmallCard Icon={TbSend} text="Send funds" />
+        <SmallCard Icon={AiOutlinePlus} text="Add funds" />
+        <SmallCard Icon={IoIosSwap} text="Swap funds" />
+        <SmallCard Icon={BsBoxArrowDown} text="Withdraw funds" />
+      </div>
+      <div>
+        <p>Recent Transactions</p>
+        <Table.Ratioed className="bg-white text-grey" />
+      </div>
     </div>
   );
 };

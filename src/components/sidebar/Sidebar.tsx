@@ -10,6 +10,11 @@ const Sidebar = () => {
   const [progressMoneyIn, setProgressMoneyIn] = useState("50%");
   const [progressMoneyOut, setProgressMoneyOut] = useState("20%");
 
+  const gradientStyle = {
+    background: "linear-gradient(180deg, rgba(232, 230, 236, 0) 0%, #E8E6EC 100%)",
+opacity: "0.4",
+  }
+
   return (
     <aside className={styles["main-right"] + " flex flex-col justify-between"}>
       <div>
@@ -39,7 +44,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-100 rounded-md p-3 text-center">
+      <div className=" rounded-md p-3 text-center" style={gradientStyle}>
         <p className="text-sm">Get rewarded when you invite a friend to sign up for our service!</p>
         <CiGift className="text-darkPurple my-3 text-9xl mx-auto" />
         <Button.Full text=" " bgColor="bg-white">
