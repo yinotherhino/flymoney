@@ -19,12 +19,6 @@
     font-weight: 600;
 }
 
-.main-left {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 3fr 2fr 6fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 10px;
-}
+
 
 

@@ -5,6 +5,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdPersonOutline } from "react-icons/md";
 import Icon from "../icons/Icon";
 import Sidebar from "../sidebar/Sidebar";
+import MainLeft from "../mainLeft/MainLeft";
 
 const MainGrid = () => {
   const [fullName, setFullName] = useState({
@@ -32,11 +33,9 @@ const MainGrid = () => {
           <RiArrowDropDownLine />
         </div>
       </div>
-      <div className={styles["main-left"]}>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
+      
+          <MainLeft />
+        
       <Sidebar />
     </main>
   );

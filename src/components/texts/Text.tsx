@@ -14,7 +14,7 @@ const PSpanGrp = ({ pText, spanText, className }: { pText: string; spanText: str
 };
 
 const inlinePara = ({ text, className }: { text: string; className?:string  }) => {
-  return <p className={className + " inline-block text-[15px]"}>{text}</p>;
+  return <p className={className + " inline-block text-sm"}>{text}</p>;
 };
 
 export default {

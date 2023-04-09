@@ -1,0 +1,16 @@
+.main-left {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr 2fr 6fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 30px;
+  margin-right: 50px;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+}

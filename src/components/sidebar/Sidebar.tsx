@@ -18,7 +18,7 @@ const Sidebar = () => {
           <Text.Small text="Great British Pound" />
         </div>
         <div className="flex justify-between">
-          <Text.inlinePara text="ACCOUNT OVERVIEW" className="text-md" />
+          <Text.inlinePara text="ACCOUNT OVERVIEW" className="" />
           <div>
             <Text.Small text="Last 30 days" />
             <RiArrowDropDownLine />
@@ -39,7 +39,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="bg-slate-200 rounded-md p-3 text-center">
+      <div className="bg-slate-100 rounded-md p-3 text-center">
         <p className="text-sm">Get rewarded when you invite a friend to sign up for our service!</p>
         <CiGift className="text-darkPurple my-3 text-9xl mx-auto" />
         <Button.Full text=" " bgColor="bg-white">
