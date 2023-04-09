@@ -20,6 +20,7 @@ module.exports = {
         lightPurple: "#e8e6ec",
         tertiaryColor: "#3b0284",
         primaryColor: "#dfdfdf",
+        grey: "#38333E"
       },
       screens: {
         xxxs: "280px",

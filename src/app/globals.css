@@ -3,12 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --white: #f5f5f5;
+  --white: #ffffff;
+  --grey-white: #f5f5f5;
   --secondary-color: #5db1a2;
   --overlay-color: #1c0140;
-  --light-purple: #e8e6ec;
+  --light-grey: #e8e6ec;
+  --deep-purple: #5C437B;
   --tertiary-color: #3b0284;
   --primary-color: #dfdfdf;
+  --grey: #38333E;
 }
 
 * {
@@ -23,8 +26,9 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   color: var(--tertiary-color);
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -35,7 +39,13 @@ h2 {
 h3 {
   font-weight: 400;
   font-size: 12px;
+  margin-bottom: 10px;
 }
+
+svg {
+  display: inline-block;
+}
+
 .parent {
   display: grid;
   grid-template-columns: 1fr 4fr;
