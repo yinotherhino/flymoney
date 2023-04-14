@@ -32,7 +32,7 @@ const MainLeft = () => {
         className={
           styles["top"] + " rounded-md border-[1px solid #dfdfdf] bg-white "
         }>
-        <div className={arrowStyle}>
+        <div className={arrowStyle  + " hover:transform hover:scale-105"}>
           <IoIosArrowBack className={"text-darkPurple text-sm"} />
         </div>
         <div className="bg-darkPurple px-10 py-5 text-white shadow-2sm text-center">
@@ -55,7 +55,7 @@ const MainLeft = () => {
             <RxDot className={dotStyle} />
           </p>
         </div>
-        <div className={arrowStyle}>
+        <div className={arrowStyle + " hover:transform hover:scale-105"}>
           <IoIosArrowForward className={"text-darkPurple text-sm"} />
         </div>
       </div>
@@ -74,7 +74,7 @@ const MainLeft = () => {
             const newItem = [...item, <CiMenuKebab key={index} />]
             return newItem
           })}
-          theadStyle="font-sm font-lato"
+          theadStyle="font-sm"
         />
       </div>
     </div>

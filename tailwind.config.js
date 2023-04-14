@@ -16,6 +16,9 @@ module.exports = {
       boxShadow: {
         "2sm": "0px 5px 15px rgba(59,2,132, 0.35)",
       },
+      hover: {
+        normal: "transform: scale(1.05)",
+      },
       colors: {
         white: "#f5f5f5",
         secondaryColor: "#5db1a2",

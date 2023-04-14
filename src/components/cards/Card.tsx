@@ -9,7 +9,7 @@ const Simple = ({
 }) => {
   return (
     <div
-      className={"bg-white rounded-lg border-[1px solid #dfdfdf] p-2 " + className}>
+      className={"bg-white rounded-lg border-[1px solid #dfdfdf] p-2 hover:transform hover:scale-105" + className}>
       {children}
     </div>
   );

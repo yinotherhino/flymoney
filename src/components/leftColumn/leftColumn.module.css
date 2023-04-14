@@ -1,38 +1,43 @@
 .left-column {
-    background-color: var(--grey-white);
-    padding: 30px 40px;
-    height: 100vh;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  
-  .left-column ul {
-    padding: 0;
-    margin-bottom: 100px;
-    color: var(--grey);
-  }
-  
-  .left-column h3 {
-    color: var(--grey);
-  }
-  
-  .left-column li {
-    list-style: none;
-    padding: 10px 15px;
-    margin: 0 -15px;
-    border-radius: 8px;
-  }
-  
-  .left-column h3 {
-    font-size: 10px;
-  }
-  
-  .left-column li :nth-child(1) {
-    margin-right: 20px;
-  }
-  
-  .active-list {
-    background-color: var(--light-grey);
-    color: var(--grey);
-  }
-  
+  background-color: var(--grey-white);
+  padding: 30px 40px;
+  height: 100vh;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.left-column ul {
+  padding: 0;
+  margin-bottom: 100px;
+  color: var(--grey);
+}
+
+.left-column h3 {
+  color: var(--grey);
+}
+
+.left-column h3 {
+  font-size: 10px;
+}
+
+.left-column li {
+  list-style: none;
+  padding: 10px 15px;
+  margin: 0 -15px;
+  border-radius: 8px;
+}
+.left-column li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: var(--light-grey);
+}
+
+.left-column li :nth-child(1) {
+  margin-right: 20px;
+}
+
+.active-list {
+  background-color: var(--light-grey);
+  color: var(--grey);
+}
+
