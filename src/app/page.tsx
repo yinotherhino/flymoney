@@ -1,7 +1,5 @@
 "use client"
-import Image from "next/image";
 import { Lato } from "next/font/google";
-import styles from "./page.module.css";
 import LeftColumn from "@/components/leftColumn/LeftColumn";
 import MainGrid from "@/components/mainGrid/MainGrid";
 

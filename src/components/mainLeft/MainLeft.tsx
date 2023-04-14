@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import styles from "./mainLeft.module.css";
-import Text from "@/components/texts/Text";
+import {CiMenuKebab} from "react-icons/ci";
 import { RxDotFilled, RxDot } from "react-icons/rx";
 import { IoIosSwap } from "react-icons/io";
 import { BsBoxArrowDown } from "react-icons/bs";
-import Card from "@/components/cards/Card";
+import { tableData } from "@/data";
 import { AiFillEye, AiFillEyeInvisible, AiOutlinePlus } from "react-icons/ai";
 import { TbSend } from "react-icons/tb";
 import SmallCard from "./SmallCard";
@@ -67,7 +67,15 @@ const MainLeft = () => {
       </div>
       <div>
         <p>Recent Transactions</p>
-        <Table.Ratioed className="bg-white text-grey" />
+        <Table.Ratioed
+          thead={["Date", "Amount", "Name", "Type", ""]}
+          theadRatio={[30, 20, 30, 15, 5]}
+          tdata={tableData.map((item, index)=>{
+            const newItem = [...item, <CiMenuKebab key={index} />]
+            return newItem
+          })}
+          theadStyle="font-sm font-lato"
+        />
       </div>
     </div>
   );
